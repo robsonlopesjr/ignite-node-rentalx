@@ -34,12 +34,12 @@ Aplicação de um sistema de aluguel de carros, desenvolvida durante o curso Ign
 
 ## Cadastro de carro
 
-# Requisitos Funcionais
+### Requisitos Funcionais
 
 - Deve ser possível cadastrar um novo carro.
 - Deve ser possível listar todas as categorias.
 
-# Regras de Negócio
+### Regras de Negócio
 
 - Não deve ser possível cadastrar um carro com uma placa já existente.
 - Não deve ser possível alterar a placa de um carro já cadastrado.
@@ -48,26 +48,26 @@ Aplicação de um sistema de aluguel de carros, desenvolvida durante o curso Ign
 
 ## Listagem de carros
 
-# Requisitos Funcionais
+### Requisitos Funcionais
 
 - Deve ser possível listar todos os carros disponíveis.
 - Deve ser possível listar todos os carros disponíveis pelo nome da categoria.
 - Deve ser possível listar todos os carros disponíveis pelo nome da marca.
 - Deve ser possível listar todos os carros disponíveis pelo nome do carro.
 
-# Regras de Negócio
+### Regras de Negócio
 
 - O usuário não precisa estar logado no sistema.
 
 ## Cadastro de especificação no carro
 
-# Requisitos Funcionais
+### Requisitos Funcionais
 
 - Deve ser possível cadastrar uma especificação para um carro.
 - Deve ser possível listar todas as especificações.
 - Deve ser possível listar todos os carros.
 
-# Regras de Negócio
+### Regras de Negócio
 
 - Não deve ser possível cadastrar uma especificação para um carro não cadastrado.
 - Não deve ser possível cadastrar uma especificação já existente para o mesmo carro.
@@ -75,27 +75,27 @@ Aplicação de um sistema de aluguel de carros, desenvolvida durante o curso Ign
 
 ## Cadastro de imagens do carro
 
-# Requisitos Funcionais
+### Requisitos Funcionais
 
 - Deve ser possível cadastrar a imagem do carro.
 - Deve ser possível listar todos os carros.
 
-# Requisitos Não Funcionais
+### Requisitos Não Funcionais
 
 - Utilizar o multer para upload dos arquivos.
 
-# Regras de Negócio
+### Regras de Negócio
 
 - O usuário deve poder cadastrar mais de uma imagem para o mesmo carro.
 - O usuário responsável pelo cadastro deve ser um usuário administrador.
 
 ## Aluguel de carro
 
-# Requisitos Funcionais
+### Requisitos Funcionais
 
 - Deve ser possível cadastrar um aluguel.
 
-# Regras de Negócio
+### Regras de Negócio
 
 - O aluguel deve ter duração mínima de 24 horas.
 - Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário.
@@ -121,27 +121,27 @@ Aplicação de um sistema de aluguel de carros, desenvolvida durante o curso Ign
 
 ## :world_map: Rotas
 
-## POST `/users`
+### POST `/users`
 
 A rota deve receber `name`, `email`, `password` e `driver_license` pelo corpo da requisição e retornar um objeto com as informações do usuário criado e um status `201`.
 
-## PATCH `/users/avatar`
+### PATCH `/users/avatar`
 
 A rota deve receber `avatar_file` pelo corpo da requisição e retornar um objeto com as informações do usuário atualizado e um status `201`.
 
-## POST `/sessions`
+### POST `/sessions`
 
 A rota deve receber `email` e `password` pelo corpo da requisição e retornar um objeto com as informações do token do usuário.
 
-## POST `/categories`
+### POST `/categories`
 
 A rota deve receber `name` e `description` pelo corpo da requisição e retornar um objeto com as informações da categoria criada e um status `201`.
 
-## GET `/categories`
+### GET `/categories`
 
 A rota deve retornar uma lista contendo todas as categorias cadastradas.
 
-## POST `/specifications`
+### POST `/specifications`
 
 A rota deve receber `name` e `description` pelo corpo da requisição e retornar um objeto com as informações da especificação criada e um status `201`.
 
