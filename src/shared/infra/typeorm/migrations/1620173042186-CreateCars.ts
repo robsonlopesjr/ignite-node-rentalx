@@ -40,6 +40,26 @@ export class CreateCars1620173042186 implements MigrationInterface {
             name: 'brand',
             type: 'varchar',
           },
+          {
+            name: 'category_id',
+            type: 'uuid',
+            isNullable: true,
+          },
+          {
+            name: 'created_at',
+            type: 'timestamp',
+            default: 'now()',
+          },
+        ],
+        foreignKeys: [
+          {
+            name: 'FKCategoryCar',
+            referencedTableName: 'categories',
+            referencedColumnNames: ['id'],
+            columnNames: ['category_id'],
+            onDelete: 'SET NULL',
+            onUpdate: 'SET NULL',
+          },
         ],
       }),
     );
