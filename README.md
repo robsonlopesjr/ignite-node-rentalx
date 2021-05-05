@@ -143,6 +143,10 @@ A rota deve retornar uma lista contendo todas as categorias cadastradas.
 
 A rota deve receber `name` e `description` pelo corpo da requisição e retornar um objeto com as informações da especificação criada e um status `201`.
 
+### POST `/cars`
+
+A rota deve receber `name`, `description`, `daily_rate`, `license_plate`, `fine_amount`, `brand`, `category_id` pelo corpo da requisição e retornar um objeto com as informações do carro criado e um status `201`.
+
 ---
 
 ## 🎯 Pré-requisitos
