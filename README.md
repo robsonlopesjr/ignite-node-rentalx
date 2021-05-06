@@ -74,7 +74,6 @@ Aplicação de um sistema de aluguel de carros, desenvolvida durante o curso Ign
 ### Requisitos Funcionais
 
 - Deve ser possível cadastrar a imagem do carro.
-- Deve ser possível listar todos os carros.
 
 ### Requisitos Não Funcionais
 
