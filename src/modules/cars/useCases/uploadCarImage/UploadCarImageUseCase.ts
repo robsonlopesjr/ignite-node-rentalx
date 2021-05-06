@@ -1,6 +1,5 @@
 import { inject, injectable } from 'tsyringe';
 
-import { CarImage } from '@modules/cars/infra/typeorm/entities/CarImage';
 import { ICarsImagesRepository } from '@modules/cars/repositories/ICarsImagesRepository';
 
 interface IRequest {
