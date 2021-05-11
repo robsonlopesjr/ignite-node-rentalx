@@ -32,7 +32,7 @@ describe('Create Category', () => {
     expect(categoryCreated).toHaveProperty('id');
   });
 
-  it('should be able to create a new category with name exists', async () => {
+  it('should not be able to create a new category with name exists', async () => {
     const category = {
       name: 'Category Test',
       description: 'Category description Test',
@@ -48,6 +48,6 @@ describe('Create Category', () => {
         name: category.name,
         description: category.description,
       }),
-    ).rejects.toEqual(new AppError('Category already exists'));
+    ).rejects.toEqual(new AppError('Category already exists!'));
   });
 });
